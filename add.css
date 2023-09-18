@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background: lightgray;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+  background: teal;
+}
+
+.logo h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+
+.active a::after {
+  content: '-';
+  background:#fff;
+  font-size: 3px;
+  display: block;
+}
+
+.wripper {
+  display: flex;
+}
+
+.equation {
+  width: 78%;
+  height: 80vh;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px 5px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equation h1 {
+  font-size: 8rem;
+  padding: 0px 20px;
+}
+
+#num1,
+#assign {
+  color: red;
+}
+
+#operant {
+  color: teal;
+}
+
+#num2 {
+  color: violet;
+}
+
+#result {
+  color: gray;
+}
+
+.options-wripper {
+  width: 20%;
+  height: 80vh;
+}
+
+.options-wripper  h1 {
+  width: 100%;
+  height: 25.6vh;
+  margin: 10px 5px 0px 10px;
+  border-radius: 10px;
+  background: red;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+#option1 {
+  background: teal;
+  color: #fff;
+}
+
+#option1:hover {
+  background: #fff;
+  color: teal;
+}
+
+#option2 {
+  background: red;
+  color: #fff;
+}
+
+#option2:hover {
+  background: #fff;
+  color: red;
+}
+
+#option3 {
+  background: violet;
+  color: #fff;
+}
+
+#option3:hover {
+  background: #fff;
+  color: violet;
+}
+
+.bi {
+  display: none;
+}
+
+/* Media for responsive design  */
+@media screen  and (max-width: 950px) {
+  body {
+    height: fit-content;
+  }
+  .logo h1 {
+    font-size: 30px;
+  }
+  .wripper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .equation {
+    width: 98%;
+    height: 30vh;
+    margin: 15% 0px 4% 0px;
+  }
+  .equation h1 {
+    font-size: 3.5rem;
+  }
+  .options-wripper {
+    width: 96%;
+    height: 5vh;
+    margin-bottom: 5%;
+  }
+  .options {
+    display: flex;
+  }
+  .options-wripper h1 {
+    font-size: 3rem;
+  }
+
+  /* navigation  */
+  .nav-links ul li {
+    display: block;
+    padding-top: 5px;
+    font-size: 2rem;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    right: -180px;
+    background: teal;
+    height: 60vh;
+    width: 200px;
+    padding: 20px;
+    transition: .5s ease-in;
+  }
+  .bi {
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+  }
+}
