@@ -4,7 +4,7 @@ A web application designed to help kids learn addition in a fun and interactive 
 
 ## Project Overview
 
-The "MATH 4 KIDS: Add" project is part of a series of math-related web applications. It focuses on addition and provides a simple and engaging interface for kids to practice their addition skills.
+The "MATH 4 KIDS: project is part of a series of math-related web applications. It focuses on addition and provides a simple and engaging interface for kids to practice their addition skills.
 
 ## Features
 
