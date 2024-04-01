@@ -177,7 +177,7 @@ nav {
   .nav-links {
     position: absolute;
     top: 0;
-    right: -180px;
+    right: -250px;
     background: teal;
     height: 60vh;
     width: 200px;
