@@ -76,5 +76,5 @@ showMenu.addEventListener('click', () => {
 })
 
 hideMenu.addEventListener('click', () => {
-  navLinks.style.right = '-200px';
+  navLinks.style.right = '-300px';
 })
