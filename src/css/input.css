@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 23px;
+}
+
+.active a::after {
+  content: "-";
+  background: #000;
+  font-size: 2px;
+  display: block;
+}
+
+.bi {
+  display: none;
+}
+
+/* Media for responsive design  */
+@media screen and (max-width: 950px) {
+  /* navigation  */
+  .nav-links ul li {
+    display: block;
+    padding-top: 5px;
+    font-size: 2rem;
+  }
+  .nav-links ul li a {
+    color: white;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    height: 60vh;
+    width: 200px;
+    padding: 20px;
+    transition: 0.5s ease-in;
+    backdrop-filter: blur(18px) saturate(161%);
+    -webkit-backdrop-filter: blur(18px) saturate(161%);
+    background-color: rgba(0, 128, 128, 1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  .bi {
+    display: block;
+    font-size: 3rem;
+  }
+}

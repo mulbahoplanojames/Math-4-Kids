@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math For Kids</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
+
+    <!-- Bootstrap Links  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="">
+    <!--? ------------------------------------------------------------------------------------ -->
+    <!-- navbar -->
+    <nav
+      class="flex justify-between items-center py-4 md:px-10 px-4 fixed z-50 w-full top-0 bg-[rgba(255,255,255,0.29)] shadow-[0_8px_32px_0_rgba(31,38,135,0.35)] backdrop-blur-[20px] rounded-[10px] border border-[rgba(255,255,255,0.28)] text-black"
+    >
+      <a
+        href="/"
+        class="text-2xl font-bold flex justify-center items-center gap-2"
+      >
+        <img
+          src="/src/images/mathforkids.png"
+          alt="logo"
+          class="w-10 h-10 rounded-md"
+        />
+        MathForKids
+      </a>
+
+      <div class="nav-links">
+        <i class="bi bi-x-square text-white" id="hide_menu"></i>
+        <ul>
+          <li><a href="/index.html">Add</a></li>
+          <li class="active"><a href="#">Subtract</a></li>
+          <li><a href="/src/pages/multiply.html">Multiply</a></li>
+          <li><a href="/src/pages/divide.html">Divid</a></li>
+        </ul>
+      </div>
+      <i class="bi bi-list text-black" id="show_menu"></i>
+    </nav>
+
+    <!--? ------------------------------------------------------------------------------------ -->
+
+    <div
+      class="h-screen bg-slate-100 md:pb-32 pb-10 md:pt-40 pt-36 md:px-20 px-3 grid md:grid-cols-12 grid-cols-1 md:gap-8 gap-y-6"
+    >
+      <!-- audio controls -->
+      <audio id="audio">
+        <source src="/src/Audio/audio.mp3.mp3" type="audio/mp3" />
+      </audio>
+
+      <!-- Equation container -->
+      <div
+        class="bg-white shadow-lg py-20 rounded-md col-span-9 flex justify-center items-center md:gap-8 gap-5"
+      >
+        <h1 class="md:text-[10rem] text-6xl font-bold text-red-600" id="num1">
+          1
+        </h1>
+        <h1
+          class="md:text-[10rem] text-6xl font-bold text-[#008081]"
+          id="oparent"
+        >
+          -
+        </h1>
+        <h1 class="md:text-[10rem] text-6xl font-bold text-[#ee82ef]" id="num2">
+          1
+        </h1>
+        <h1
+          class="md:text-[10rem] text-6xl font-bold text-red-600"
+          id="assignment"
+        >
+          =
+        </h1>
+        <h1
+          class="md:text-[10rem] text-6xl font-bold text-gray-500"
+          id="answer"
+        >
+          ?
+        </h1>
+      </div>
+
+      <!-- Options container -->
+      <div
+        class="py-2 rounded-md col-span-3 grid md:grid-cols-1 grid-cols-3 gap-3"
+      >
+        <h1
+          class="md:text-[5rem] text-4xl text-white cursor-pointer overflow-auto font-bold bg-red-600 py-3 rounded-md flex justify-center items-center hover:bg-white hover:text-red-600 transition-all duration-300 shadow-lg"
+          id="option1"
+        >
+          1
+        </h1>
+        <h1
+          class="md:text-[5rem] text-4xl text-white cursor-pointer overflow-auto font-bold bg-[#008081] hover:bg-white hover:text-[#008081] py-3 rounded-md flex justify-center items-center transition-all duration-300 shadow-lg"
+          id="option2"
+        >
+          1
+        </h1>
+        <h1
+          class="md:text-[5rem] text-4xl text-white cursor-pointer overflow-auto font-bold bg-[#ee82ef] hover:bg-white hover:text-[#ee82ef] py-3 rounded-md flex justify-center items-center transition-all duration-300 shadow-lg"
+          id="option3"
+        >
+          1
+        </h1>
+      </div>
+    </div>
+
+    <script src="/src/Js/subtract.js"></script>
+  </body>
+</html>
