@@ -6,6 +6,9 @@ const option3 = document.querySelector("#option3");
 //Wrong audio
 const audio = document.querySelector("#audio");
 
+// correct audio
+const currect_audio = document.querySelector("#currect_audio");
+
 let answer = 0;
 
 // An arrow function to generate a random equation.
@@ -21,8 +24,6 @@ const generateEquation = () => {
   document.querySelector("#num2").innerHTML = num2;
 
   answer = num1 / num2;
-
-  console.log(answer);
 
   let allAnswers = [answer, dummyAnswer1, dummyAnswer2];
 
@@ -43,6 +44,7 @@ const generateEquation = () => {
 option1.addEventListener("click", () => {
   if (option1.innerHTML == answer) {
     generateEquation();
+    currect_audio.play();
   } else {
     audio.play();
   }
@@ -51,6 +53,7 @@ option1.addEventListener("click", () => {
 option2.addEventListener("click", () => {
   if (option2.innerHTML == answer) {
     generateEquation();
+    currect_audio.play();
   } else {
     audio.play();
   }
@@ -59,6 +62,7 @@ option2.addEventListener("click", () => {
 option3.addEventListener("click", () => {
   if (option3.innerHTML == answer) {
     generateEquation();
+    currect_audio.play();
   } else {
     audio.play();
   }
