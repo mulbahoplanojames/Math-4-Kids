@@ -1,14 +1,10 @@
-
 # Math For Kids
 
 Math For Kids is an interactive web application designed to help children learn basic arithmetic operations such as addition, subtraction, multiplication, and division in a fun and engaging way. The application presents randomized equations and offers multiple-choice answers, making it easy for kids to practice their math skills.
 
-
 ## Tech Stack
 
 **Client:** HTML, CSS, TailwindCSS, JAVASCRIPT
-
-
 
 ## Features
 
@@ -20,23 +16,13 @@ Math For Kids is an interactive web application designed to help children learn 
 
 - Responsive Navigation: The app features a responsive and easy-to-use navigation menu.
 
-
-
-
-
-
-
-
-
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#ee82ef](https://via.placeholder.com/10/ee82ef?t) #ee82ef |
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Primary Color    | ![#ee82ef](https://via.placeholder.com/10/ee82ef?t) #ee82ef      |
 | Background Color | ![#008081](https://via.placeholder.com/10/008081?text=+) #008081 |
-| Text Color | ![#ff7e00](https://via.placeholder.com/10/ff7e00?text=+) #ff7e00 |
-
-
+| Text Color       | ![#ff7e00](https://via.placeholder.com/10/ff7e00?text=+) #ff7e00 |
 
 ## Run Locally
 
@@ -62,18 +48,15 @@ Install dependencies
 
 Open the index.html file in your preferred browser.
 
-
-
 ## Usage
-
 
 - Start the App: Open the index.html file in your web browser.
 
 - Navigate: Use the navigation menu to select between addition, subtraction, multiplication, and division exercises.
 
-
 - Answer Questions: Click on the correct answer from the provided options. Immediate feedback will be given via audio.
-.
+  .
+
 ## Code Explanation
 
 ### HTML (index.html)
@@ -112,14 +95,13 @@ The JavaScript code is responsible for the app's core functionality, including:
 />
 
 ```
+
 ## Related
 
 Here are some related projects
 
 [Awesome README](https://github.com/mulbahoplanojames/PortFolio)
 
-
 ## Support
 
 For support, email mulbahjamesoplano@gmail.com.
-
